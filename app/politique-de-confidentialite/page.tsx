@@ -49,6 +49,11 @@ export default function PolitiqueDeConfidentialite() {
                 pouvez introduire une réclamation auprès de la CNIL (cnil.fr).
             </p>
 
+            <h2>Cookies et mesure d'audience</h2>
+            <p>
+                
+            </p>
+
             <p>
                 <Link href="/">← Retour à l'accueil</Link>
             </p>

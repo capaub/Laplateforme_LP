@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { site } from "@/content/site";
+import { trackEvent } from "@/components/ConsentBanner/track";
 import styles from "./ContactForm.module.css";
 import Link from "next/link";
 
@@ -63,6 +64,8 @@ export default function ContactForm() {
     }
 
     if (status === "success") {
+        setStatus("success");
+        trackEvent("generate_lead");
         return (
             <p className={styles.success} role="status">
                 Merci ! Votre demande a bien été envoyée, vérifiez votre boîte mail pour confirmer votre adresse.

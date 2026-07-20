@@ -1,0 +1,49 @@
+.banner {
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline: 0;
+    z-index: 10;
+    background: var(--color-text);
+    color: var(--color-background);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.text {
+    max-width: 60ch;
+}
+
+.text a {
+    color: inherit;
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.button {
+    font: inherit;
+    font-weight: 600;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-background);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+@media (min-width: 48rem) {
+    .banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -15,6 +15,7 @@ export type SiteContent = {
     socialProof: { title: string; testimonials: Testimonial[] };
     footer: { companyName: string, email: string };
     cta: { title: string; intro: string; formEndpoint: string };
+    analytics: { gaId: string };
 }
 
 export const site: SiteContent = {
@@ -66,5 +67,8 @@ export const site: SiteContent = {
         title: "Parlons de votre projet",
         intro: "Laissez-nous vos coordonnées : nous revenons vers vous sous 48 h avec une première proposition.",
         formEndpoint: "https://c901b799.sibforms.com/serve/MUIFALwSv4Ho38kQkC3HBC5P_mxKPNrrZC1zqHjrPMHBDtqNmuC1MG0lI9cwYFiMk6aNldheQ-K0QEQKgdI5tc7iGFgnYs4Ob3wa_jK2AAdTPI4dObwi05Z08jn5ri8tH79JxoBTZfOaDDYTPfKIYya0Oh5dfBZqtc3IZIo9sMj1h8hBW2too21CYdC-CJ_cZeDNPQDi02ugCQPX7g==",
+    },
+    analytics: {
+        gaId: "",
     },
 };

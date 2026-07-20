@@ -1,6 +1,7 @@
 import { site } from "@/content/site";
 import styles from "./Footer.module.css";
 import Link from "next/link";
+import ManageConsentButton from "@/components/ManageConsentButton/ManageConsentButton";
 
 export default function Footer() {
     return (
@@ -11,6 +12,7 @@ export default function Footer() {
                 <ul className={styles.links} role="list">
                     <li><Link href="/mentions-legales">Mentions légales</Link></li>
                     <li><Link href="/politique-de-confidentialite">Politique de confidentialité</Link></li>
+                    <li><ManageConsentButton /></li>
                 </ul>
             </div>
         </footer>

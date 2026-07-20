@@ -1,0 +1,12 @@
+.manage {
+    font: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--color-text-muted);
+    cursor: pointer;
+}
+
+.manage:hover {
+    color: var(--color-text);
+}
