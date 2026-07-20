@@ -1,0 +1,30 @@
+.socialProof {
+    padding-block: var(--space-xl);
+}
+
+.title {
+    font-size: var(--text-xl);
+    margin-block-end: var(--space-lg);
+}
+
+.items {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.card {
+    background: var(--color-surface);
+    padding: var(--space-lg);
+    border-radius: 0.5rem;
+}
+
+.quote {
+    font-size: var(--text-lg);
+}
+
+.caption {
+    margin-block-start: var(--space-md);
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}

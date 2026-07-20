@@ -1,0 +1,70 @@
+export type Testimonial = {
+    quote: string;
+    author: string;
+    role: string;
+}
+
+export type SiteContent = {
+    name: string;
+    url: string;
+    tagLine: string;
+    description: string;
+    hero: { title: string; subtitle: string; ctaLabel: string };
+    problem: { title: string; items: string[] };
+    solution: { title: string; benefits: string[] };
+    socialProof: { title: string; testimonials: Testimonial[] };
+    footer: { companyName: string, email: string };
+    cta: { title: string; intro: string; formEndpoint: string };
+}
+
+export const site: SiteContent = {
+    name: "Landing Page template",
+    url: "https://landing.example.com",
+    tagLine: "Transformez vos visiteurs en clients",
+    description: "Template de landing page - structure de conversion, formulaire conecté, SEO et accéssibilité de référence.",
+    hero: {
+        title: "Transformez vos visiteurs en clients",
+        subtitle: "Une landing page claire, rapide et confome, conçue pour convertir.",
+        ctaLabel: "Demander un devis",
+    },
+    problem: {
+        title: "Votre site ne convertit pas ?",
+        items: [
+            "Les visiteurs arrivent... et repartent sans laisser de trace.",
+            "Votre formulaire de contact ne reçoit jamais de message.",
+            "Vous ne savez pas ce qui fonctionne ne quoi améliorer.",
+        ]
+    },
+    solution: {
+        title: "Une page pensée pour convertir",
+        benefits: [
+            "Un message clair qui parle à vos clients, pas de jargon.",
+            "Un appel à l'action visible à chaque étape de la lecture.",
+            "Un formulaire simple, connecté à votre outil d'emailing.",
+        ]
+    },
+    socialProof: {
+        title: "Il nous font confiance",
+        testimonials: [
+            {
+                quote: "En un mois, deux fois plus de demandes de devis.",
+                author: "Jean Dupont",
+                role: "Fleuriste, Aix-en-Provence",
+            },
+            {
+                quote: "Enfin un site que je peux modifier moi-même.",
+                author: "Karim Benali",
+                role: "Artisan menuisier",
+            },
+        ]
+    },
+    footer: {
+        companyName: "Landing Page Template",
+        email: "contact@example.com",
+    },
+    cta: {
+        title: "Parlons de votre projet",
+        intro: "Laissez-nous vos coordonnées : nous revenons vers vous sous 48 h avec une première proposition.",
+        formEndpoint: "https://c901b799.sibforms.com/serve/MUIFALwSv4Ho38kQkC3HBC5P_mxKPNrrZC1zqHjrPMHBDtqNmuC1MG0lI9cwYFiMk6aNldheQ-K0QEQKgdI5tc7iGFgnYs4Ob3wa_jK2AAdTPI4dObwi05Z08jn5ri8tH79JxoBTZfOaDDYTPfKIYya0Oh5dfBZqtc3IZIo9sMj1h8hBW2too21CYdC-CJ_cZeDNPQDi02ugCQPX7g==",
+    },
+};

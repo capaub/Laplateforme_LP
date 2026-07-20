@@ -1,0 +1,22 @@
+.legal {
+    padding-block: var(--space-xl);
+    max-width: 42rem;
+}
+
+.legal h1 {
+    font-size: var(--text-xl);
+    margin-block-end: var(--space-lg);
+}
+
+.legal h2 {
+    font-size: var(--text-lg);
+    margin-block: var(--space-lg) var(--space-sm);
+}
+
+.legal p {
+    margin-block-end: var(--space-md);
+}
+
+.legal a {
+    color: var(--color-primary);
+}

@@ -1,0 +1,27 @@
+.solution {
+    padding-block: var(--space-xl);
+}
+
+.title {
+    font-size: var(--text-xl);
+    margin-block-end: var(--space-lg);
+}
+
+.items {
+    display: grid;
+    gap: var(--space-md);
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    border-left: 3px solid var(--color-primary);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,14 @@
+.cta {
+    padding-bottom: var(--space-xl);
+}
+
+.title {
+    font-size: var(--text-xl);
+    margin-block-end: var(--space-sm);
+}
+
+.intro {
+    color: var(--color-text-muted);
+    max-width: 38rem;
+    margin-block-end: var(--space-lg);
+}
