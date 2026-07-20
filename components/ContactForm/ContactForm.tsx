@@ -58,13 +58,13 @@ export default function ContactForm() {
             });
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             setStatus("success");
+            trackEvent("generate_lead");
             } catch {
             setStatus("error");
         }
     }
 
     if (status === "success") {
-        trackEvent("generate_lead");
         return (
             <p className={styles.success} role="status">
                 Merci ! Votre demande a bien été envoyée, vérifiez votre boîte mail pour confirmer votre adresse.

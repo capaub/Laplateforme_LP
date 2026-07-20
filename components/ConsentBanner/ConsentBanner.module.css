@@ -1,14 +1,18 @@
 .banner {
     position: fixed;
-    inset-block-end: 0;
-    inset-inline: 0;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     z-index: 10;
+    min-width: 80%;
     background: var(--color-text);
     color: var(--color-background);
-    padding: var(--space-md);
+    padding: var(--space-lg) var(--space-xl);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--space-md);
+    border-radius: var(--space-md);
 }
 
 .text {

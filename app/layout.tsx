@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { site } from "@/content/site";
 import "./globals.css";
+import ConsentBanner from "@/components/ConsentBanner/ConsentBanner";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -37,7 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${geist.variable}`}>
-      <body>{children}</body>
+      <body>
+      {children}
+      <ConsentBanner />
+      </body>
     </html>
   );
 }

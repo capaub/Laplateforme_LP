@@ -1,0 +1,90 @@
+backend:
+  name: github
+  repo: capaub/Laplateforme_LP
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+site_url: https://capaub.github.io/Laplateforme_LP
+
+collections:
+  - name: site
+    label: "Contenu du site"
+    files:
+      - name: content
+        label: "Landing page"
+        file: content/site.json
+        format: json
+        fields:
+          - { name: name, label: "Nom du site", widget: string }
+          - { name: tagLine, label: "Slogan", widget: string }
+          - { name: description, label: "Description (SEO)", widget: text }
+
+          - name: hero
+            label: "Section Hero"
+            widget: object
+            fields:
+              - { name: title, label: "Titre principal", widget: string }
+              - { name: subtitle, label: "Sous-titre", widget: text }
+              - { name: ctaLabel, label: "Texte du bouton", widget: string }
+
+          - name: problem
+            label: "Section Problème"
+            widget: object
+            fields:
+              - { name: title, label: "Titre", widget: string }
+              - name: items
+                label: "Points de douleur"
+                widget: list
+                field: { name: item, label: "Point", widget: string }
+
+          - name: solution
+            label: "Section Solution"
+            widget: object
+            fields:
+              - { name: title, label: "Titre", widget: string }
+              - name: benefits
+                label: "Bénéfices"
+                widget: list
+                field: { name: benefit, label: "Bénéfice", widget: string }
+
+          - name: socialProof
+            label: "Témoignages"
+            widget: object
+            fields:
+              - { name: title, label: "Titre", widget: string }
+              - name: testimonials
+                label: "Témoignages"
+                widget: list
+                fields:
+                  - { name: quote, label: "Citation", widget: text }
+                  - { name: author, label: "Auteur", widget: string }
+                  - { name: role, label: "Activité", widget: string }
+
+          - name: cta
+            label: "Section Contact"
+            widget: object
+            fields:
+              - { name: title, label: "Titre", widget: string }
+              - { name: intro, label: "Texte d'introduction", widget: text }
+              - name: formEndpoint
+                label: "Endpoint du formulaire (technique — ne pas modifier)"
+                widget: string
+
+          - name: footer
+            label: "Pied de page"
+            widget: object
+            fields:
+              - { name: companyName, label: "Nom de l'entreprise", widget: string }
+              - { name: email, label: "Email de contact", widget: string }
+
+          - name: url
+            label: "URL du site (technique)"
+            widget: string
+
+          - name: analytics
+            label: "Mesure d'audience (technique)"
+            widget: object
+            fields:
+              - { name: gaId, label: "Identifiant GA4", widget: string }
