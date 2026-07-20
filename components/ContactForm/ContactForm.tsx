@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { site } from "@/content/site";
 import styles from "./ContactForm.module.css";
+import Link from "next/link";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -123,7 +124,7 @@ export default function ContactForm() {
                 />
                 <label htmlFor="contact-consent">
                     J'accepte que mes données soient utilisées pour être recontacté·e.
-                    Voir notre <a href="/politique-de-confidentialite">politique de confidentialité</a>.
+                    Voir notre <Link href="/politique-de-confidentialite">politique de confidentialité</Link>.
                 </label>
             </div>
             {errors.consent && (
