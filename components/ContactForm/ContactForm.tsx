@@ -64,7 +64,6 @@ export default function ContactForm() {
     }
 
     if (status === "success") {
-        setStatus("success");
         trackEvent("generate_lead");
         return (
             <p className={styles.success} role="status">
@@ -79,7 +78,7 @@ export default function ContactForm() {
               noValidate>
             <input className={styles.honeypot}
                    type="text"
-                   name="email_addres_check"
+                   name="email_address_check"
                    defaultValue=""
                    tabIndex={-1}
                    autoComplete="off"
@@ -136,7 +135,7 @@ export default function ContactForm() {
 
             <button className={styles.submit}
                     type="submit" disabled={status === "submitting"}>
-                {status === "submitting" ? "Envoi en cours..." : "Envoyer ma deamnde"}
+                {status === "submitting" ? "Envoi en cours..." : "Envoyer ma demande"}
             </button>
 
             {status === "error" && (

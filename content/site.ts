@@ -13,7 +13,7 @@ export type SiteContent = {
     problem: { title: string; items: string[] };
     solution: { title: string; benefits: string[] };
     socialProof: { title: string; testimonials: Testimonial[] };
-    footer: { companyName: string, email: string };
+    footer: { companyName: string, email: string, phone: string };
     cta: { title: string; intro: string; formEndpoint: string };
     analytics: { gaId: string };
 }
@@ -59,16 +59,17 @@ export const site: SiteContent = {
             },
         ]
     },
-    footer: {
-        companyName: "Landing Page Template",
-        email: "contact@example.com",
-    },
     cta: {
         title: "Parlons de votre projet",
         intro: "Laissez-nous vos coordonnées : nous revenons vers vous sous 48 h avec une première proposition.",
         formEndpoint: "https://c901b799.sibforms.com/serve/MUIFALwSv4Ho38kQkC3HBC5P_mxKPNrrZC1zqHjrPMHBDtqNmuC1MG0lI9cwYFiMk6aNldheQ-K0QEQKgdI5tc7iGFgnYs4Ob3wa_jK2AAdTPI4dObwi05Z08jn5ri8tH79JxoBTZfOaDDYTPfKIYya0Oh5dfBZqtc3IZIo9sMj1h8hBW2too21CYdC-CJ_cZeDNPQDi02ugCQPX7g==",
     },
+    footer: {
+        companyName: "Ma super entreprise",
+        email: "contact@example.com",
+        phone: "01.23.45.67.89",
+    },
     analytics: {
-        gaId: "",
+        gaId: "G-0HQXDLYEDN",
     },
 };

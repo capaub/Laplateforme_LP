@@ -4,7 +4,7 @@ import styles from "./CtaSection.module.css";
 
 export default function CtaSection() {
     return (
-        <section className={`${styles.cta} container`} id="contact" aria-labelledby="contact-tilte">
+        <section className={`${styles.cta} container`} id="contact" aria-labelledby="contact-title">
             <h2 className={styles.title} id="contact-title">{site.cta.title}</h2>
             <p className={styles.intro}>{site.cta.intro}</p>
             <ContactForm />

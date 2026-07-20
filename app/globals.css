@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), sans-serif;
   color: var(--color-text);
   background: var(--color-background);
   line-height: 1.6;
@@ -50,6 +50,7 @@ body {
 
 h1, h2, h3, p, figure, blockquote {
   margin: 0;
+  padding: 0;
 }
 
 img,

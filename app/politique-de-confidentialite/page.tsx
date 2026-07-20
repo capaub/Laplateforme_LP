@@ -51,7 +51,13 @@ export default function PolitiqueDeConfidentialite() {
 
             <h2>Cookies et mesure d'audience</h2>
             <p>
-                
+                Avec votre consentement, ce site utilise Google Analytics (Google
+                Ireland Ltd / Google LLC — vos données peuvent être transférées hors
+                de l'Union Européenne) afin de mesurer son audience et d'améliorer
+                son contenu. Aucun traceur n'est déposé sans votre accord, et vous
+                pouvez naviguer normalement en le refusant. Votre choix est conservé
+                six mois, puis redemandé. Vous pouvez le modifier à tout moment via
+                le bouton « Gérer mes cookies » en bas de page.
             </p>
 
             <p>

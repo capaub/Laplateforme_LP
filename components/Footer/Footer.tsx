@@ -6,9 +6,12 @@ import ManageConsentButton from "@/components/ManageConsentButton/ManageConsentB
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={`${styles.inner} container`}>
+            <div className={`${styles.inner}`}>
                 <p className={styles.brand}>{site.footer.companyName}</p>
-                <a className={styles.email} href={`mailto:${site.footer.email}`}>{site.footer.email}</a>
+                <ul className={styles.contacts} >
+                    <li><a href={`tel:${site.footer.phone}`}>Tel: {site.footer.phone}</a></li>
+                    <li><a href={`mailto:${site.footer.email}`}>Email: {site.footer.email}</a></li>
+                </ul>
                 <ul className={styles.links} role="list">
                     <li><Link href="/mentions-legales">Mentions légales</Link></li>
                     <li><Link href="/politique-de-confidentialite">Politique de confidentialité</Link></li>

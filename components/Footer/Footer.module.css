@@ -1,28 +1,41 @@
 .footer {
     background: var(--color-surface);
-    margin-block-start: var(--space-xl);
 }
 
 .inner {
-    display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
-    padding-block: var(--space-lg);}
+    max-width: 32rem;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+}
 
 .brand {
+    padding-top: var(--space-sm);
     font-weight: 700;
 }
 
-.email {
-    color: var(--color-text);
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contacts a {
+    text-decoration: none;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .links {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-md);
     list-style: none;
-    padding: 0;
+    justify-content: space-between;
 }
 
 .links a {

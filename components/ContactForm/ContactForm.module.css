@@ -49,6 +49,7 @@
 }
 
 .submit {
+    margin-inline: auto;
     justify-self: start;
     background: var(--color-primary);
     color: #fff;
