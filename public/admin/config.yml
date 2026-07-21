@@ -18,7 +18,11 @@ collections:
         widget: object
         fields:
           { name: primary, label: "Couleur principale (boutons, liens)", widget: color }
-          { name: accent, label: "Couleur de fond des blocs", widget: color }
+            { name: primaryHover, label: "Couleur au survol", widget: color }
+            { name: text, label: "Couleur du texte", widget: color }
+            { name: textMuted, label: "Couleur du texte \"mué\"", widget: color }
+            { name: background, label: "Couleur de fond", widget: color }
+            { name: surface, label: "couleur de surface", widget: color }
 
       - name: content
         label: "Landing page"
