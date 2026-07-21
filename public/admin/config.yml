@@ -13,22 +13,22 @@ collections:
   - name: site
     label: "Contenu du site"
     files:
-      - name: theme
-        label: "Charte graphique"
-        widget: object
-        fields:
-          - { name: primary, label: "Couleur principale (boutons, liens)", widget: color }
-          - { name: primaryHover, label: "Couleur au survol", widget: color }
-          - { name: text, label: "Couleur du texte", widget: color }
-          - { name: textMuted, label: "Couleur du texte \"mué\"", widget: color }
-          - { name: background, label: "Couleur de fond", widget: color }
-          - { name: surface, label: "couleur de surface", widget: color }
 
       - name: content
         label: "Landing page"
         file: content/site.json
         format: json
         fields:
+          - name: theme
+            label: "Charte graphique"
+            widget: object
+            fields:
+              - { name: primary, label: "Couleur principale (boutons, liens)", widget: color }
+              - { name: primaryHover, label: "Couleur au survol", widget: color }
+              - { name: text, label: "Couleur du texte", widget: color }
+              - { name: textMuted, label: "Couleur du texte \"mué\"", widget: color }
+              - { name: background, label: "Couleur de fond", widget: color }
+              - { name: surface, label: "couleur de surface", widget: color }
           - { name: name, label: "Nom du site", widget: string }
           - { name: tagLine, label: "Slogan", widget: string }
           - { name: description, label: "Description (SEO)", widget: text }
