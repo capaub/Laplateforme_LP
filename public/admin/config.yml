@@ -17,12 +17,12 @@ collections:
         label: "Charte graphique"
         widget: object
         fields:
-          { name: --color-primary, label: "Couleur principale (boutons, liens)", widget: color }
-            { name: --color-primary-hover, label: "Couleur au survol", widget: color }
-            { name: --color-text, label: "Couleur du texte", widget: color }
-            { name: --color-text-muted, label: "Couleur du texte \"mué\"", widget: color }
-            { name: --color-background, label: "Couleur de fond", widget: color }
-            { name: --color-surface, label: "couleur de surface", widget: color }
+          - { name: primary, label: "Couleur principale (boutons, liens)", widget: color }
+          - { name: primaryHover, label: "Couleur au survol", widget: color }
+          - { name: text, label: "Couleur du texte", widget: color }
+          - { name: textMuted, label: "Couleur du texte \"mué\"", widget: color }
+          - { name: background, label: "Couleur de fond", widget: color }
+          - { name: surface, label: "couleur de surface", widget: color }
 
       - name: content
         label: "Landing page"
