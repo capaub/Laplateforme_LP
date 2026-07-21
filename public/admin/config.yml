@@ -2,6 +2,7 @@ backend:
   name: github
   repo: capaub/Laplateforme_LP
   branch: main
+  base_url: https://sveltia-cms-auth.aubry-capitone.workers.dev
 
 media_folder: public/images
 public_folder: /images
