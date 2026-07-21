@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${geist.variable} ${themeVars}`}>
+    <html lang="fr" className={geist.variable} style={themeVars}>
       <body>
       {children}
       <ConsentBanner />
