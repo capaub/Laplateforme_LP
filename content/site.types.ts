@@ -13,7 +13,7 @@ export type SiteContent = {
     problem: { title: string; items: string[] };
     solution: { title: string; benefits: string[] };
     socialProof: { title: string; testimonials: Testimonial[] };
-    footer: { companyName: string, email: string, phone: string };
     cta: { title: string; intro: string; formEndpoint: string };
+    footer: { companyName: string, email: string, phone: string };
     analytics: { gaId: string };
 }

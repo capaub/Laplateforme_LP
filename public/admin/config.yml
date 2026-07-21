@@ -78,6 +78,7 @@ collections:
             fields:
               - { name: companyName, label: "Nom de l'entreprise", widget: string }
               - { name: email, label: "Email de contact", widget: string }
+              - { name: phone, label: "Téléphone de contact", widget: string }
 
           - name: url
             label: "URL du site (technique)"
