@@ -5,6 +5,14 @@ export type Testimonial = {
 }
 
 export type SiteContent = {
+    theme: {
+        primary: string;
+        primaryHover: string,
+        text: string,
+        textMuted: string,
+        background: string,
+        surface: string
+    },
     name: string;
     url: string;
     tagLine: string;

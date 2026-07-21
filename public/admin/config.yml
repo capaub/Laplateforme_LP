@@ -13,6 +13,13 @@ collections:
   - name: site
     label: "Contenu du site"
     files:
+      - name: theme
+        label: "Charte graphique"
+        widget: object
+        fields:
+          { name: primary, label: "Couleur principale (boutons, liens)", widget: color }
+          { name: accent, label: "Couleur de fond des blocs", widget: color }
+
       - name: content
         label: "Landing page"
         file: content/site.json
@@ -69,9 +76,6 @@ collections:
             fields:
               - { name: title, label: "Titre", widget: string }
               - { name: intro, label: "Texte d'introduction", widget: text }
-              - name: formEndpoint
-                label: "Endpoint du formulaire (technique — ne pas modifier)"
-                widget: string
 
           - name: footer
             label: "Pied de page"
@@ -80,13 +84,3 @@ collections:
               - { name: companyName, label: "Nom de l'entreprise", widget: string }
               - { name: email, label: "Email de contact", widget: string }
               - { name: phone, label: "Téléphone de contact", widget: string }
-
-          - name: url
-            label: "URL du site (technique)"
-            widget: string
-
-          - name: analytics
-            label: "Mesure d'audience (technique)"
-            widget: object
-            fields:
-              - { name: gaId, label: "Identifiant GA4", widget: string }
