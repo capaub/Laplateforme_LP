@@ -1,6 +1,5 @@
 {
-  "name": "Landing Page template",
-  "url": "https://landing.example.com",
+  "name": "Test de modification LP",
   "tagLine": "Transformez vos visiteurs en clients",
   "description": "Template de landing page - structure de conversion, formulaire conecté, SEO et accéssibilité de référence.",
   "hero": {
@@ -49,6 +48,7 @@
     "email": "contact@example.com",
     "phone": "01.23.45.67.89"
   },
+  "url": "https://landing.example.com",
   "analytics": {
     "gaId": "G-0HQXDLYEDN"
   }
