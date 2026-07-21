@@ -8,20 +8,15 @@
 }
 
 .items {
+    list-style: none;
+    padding-inline-start: 0;;
     display: grid;
     gap: var(--space-md);
-    list-style: none;
-    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .item {
     background: var(--color-surface);
     padding: var(--space-md) var(--space-lg);
     border-radius: 0.5rem;
-}
-
-@media (min-width: 48rem) {
-    .items {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
