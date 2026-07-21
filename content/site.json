@@ -18,11 +18,9 @@
   "problem": {
     "title": "Votre site ne convertit pas ?",
     "items": [
-      "test",
       "Les visiteurs arrivent... et repartent sans laisser de trace.",
       "Votre formulaire de contact ne reçoit jamais de message.",
-      "Vous ne savez pas ce qui fonctionne ni quoi améliorer.",
-      "test2"
+      "Vous ne savez pas ce qui fonctionne ni quoi améliorer."
     ]
   },
   "solution": {
