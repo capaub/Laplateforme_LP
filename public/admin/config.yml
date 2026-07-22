@@ -34,13 +34,13 @@ collections:
             widget: object
             fields:
               - name: title
-              - label: "Titre dans Google"
-              - widget: string
-              - hint: "50 à 60 caractères. Incluez votre activité et votre ville."
+                label: "Titre dans Google"
+                widget: string
+                hint: "50 à 60 caractères. Incluez votre activité et votre ville."
               - name: description
-              - label: "Description dans Google"
-              - widget: text
-              - hint: "150 à 160 caractères. Une phrase qui donne envie de cliquer."
+                label: "Description dans Google"
+                widget: text
+                hint: "150 à 160 caractères. Une phrase qui donne envie de cliquer."
           - { name: name, label: "Nom du site", widget: string }
           - { name: tagLine, label: "Slogan", widget: string }
           - { name: description, label: "Description (SEO)", widget: text }
