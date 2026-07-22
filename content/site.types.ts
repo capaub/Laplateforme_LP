@@ -13,6 +13,10 @@ export type SiteContent = {
         background: string,
         surface: string
     },
+    seo: {
+        title: string;
+        description: string;
+    };
     name: string;
     url: string;
     tagLine: string;
