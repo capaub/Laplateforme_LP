@@ -60,8 +60,8 @@
     "email": "contact@example.com",
     "phone": "01.23.45.67.89"
   },
-  "url": "https://landing.example.com",
   "analytics": {
     "gaId": "G-0HQXDLYEDN"
-  }
+  },
+  "url": "https://landing.example.com"
 }
